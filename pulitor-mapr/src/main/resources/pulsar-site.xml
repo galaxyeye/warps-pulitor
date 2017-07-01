@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl" ?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>storage.data.store.class</name>
+    <value>org.apache.gora.hbase.store.HBaseStore</value>
+  </property>
+
+  <!-- fetch rules -->
+
+  <property>
+    <name>http.useHttp11</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>http.robots.obey</name>
+    <value>false</value>
+    <description>sorry, we do not obey the robots.txt protocol</description>
+  </property>
+
+  <property>
+    <name>http.agent.name</name>
+    <value>Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20121202 Firefox/17.0 Iceweasel/17.0.1</value>
+  </property>
+
+  <property>
+    <name>parse.ignore.external.links</name>
+    <value>true</value>
+  </property>
+</configuration>

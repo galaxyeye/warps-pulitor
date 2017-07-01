@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl" ?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>pulsar.config.id</name>
+    <value>local</value>
+  </property>
+
+  <!-- persist -->
+  <property>
+    <name>storage.crawl.id</name>
+    <value>information_tmp</value>
+    <description>Crawl pages for opinion mining</description>
+  </property>
+
+  <property>
+    <name>indexer.url</name>
+    <value>http://master:8983/information_tmp</value>
+  </property>
+
+  <property>
+    <name>mapreduce.job.reduces</name>
+    <value>1</value>
+  </property>
+
+</configuration>
